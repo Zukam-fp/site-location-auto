@@ -4,7 +4,8 @@ import heroPorsche from "@/assets/hero-porsche.jpg";
 import interiorLeather from "@/assets/interior-leather.jpg";
 import { fleet } from "@/lib/fleet";
 
-const TITLE = "Vitesse Elite — Location de voitures de luxe à Paris, Monaco & Riviera";
+const TITLE =
+  "Vitesse Elite — Location de voitures de luxe à Paris, Monaco & Riviera";
 const DESCRIPTION =
   "Location de véhicules d'exception : Ferrari, Lamborghini, Rolls-Royce, Porsche. Livraison sur mesure, conciergerie 24/7 à Paris, Monaco, Genève et Courchevel.";
 
@@ -44,7 +45,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
 
 const services = [
   {
@@ -90,13 +90,22 @@ function Nav() {
             Vitesse&bull;Elite
           </a>
           <div className="hidden gap-8 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex">
-            <a href="#flotte" className="transition-colors hover:text-foreground">
+            <a
+              href="#flotte"
+              className="transition-colors hover:text-foreground"
+            >
               La Flotte
             </a>
-            <a href="#services" className="transition-colors hover:text-foreground">
+            <a
+              href="#services"
+              className="transition-colors hover:text-foreground"
+            >
               Conciergerie
             </a>
-            <a href="#contact" className="transition-colors hover:text-foreground">
+            <a
+              href="#contact"
+              className="transition-colors hover:text-foreground"
+            >
               Expériences
             </a>
           </div>
@@ -232,7 +241,9 @@ function Fleet() {
                   </h3>
                   <span className="shrink-0 font-mono text-sm">
                     {car.price}
-                    <span className="text-[10px] text-muted-foreground">/j</span>
+                    <span className="text-[10px] text-muted-foreground">
+                      /j
+                    </span>
                   </span>
                 </div>
                 <div className="grid grid-cols-3 gap-4 border-t border-border pt-4">
@@ -306,8 +317,8 @@ function Services() {
           </div>
           <blockquote className="absolute -bottom-10 -left-10 hidden max-w-xs border border-border bg-background p-8 text-foreground lg:block">
             <p className="text-xs italic leading-relaxed">
-              "Chaque détail est une affirmation de notre engagement envers l'excellence
-              absolue."
+              "Chaque détail est une affirmation de notre engagement envers
+              l'excellence absolue."
             </p>
             <cite className="mt-4 block text-[9px] font-bold uppercase not-italic tracking-widest">
               — Jean-Luc R., Directeur Opérations
@@ -329,8 +340,8 @@ function Footer() {
               Vitesse&bull;Elite
             </span>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              L'excellence automobile pour ceux qui ne font aucun compromis. Paris —
-              Monaco — Genève — Courchevel.
+              L'excellence automobile pour ceux qui ne font aucun compromis.
+              Paris — Monaco — Genève — Courchevel.
             </p>
           </div>
           <div>
@@ -371,7 +382,10 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@vitesse-elite.fr" className="hover:text-foreground">
+                <a
+                  href="mailto:contact@vitesse-elite.fr"
+                  className="hover:text-foreground"
+                >
                   contact@vitesse-elite.fr
                 </a>
               </li>
